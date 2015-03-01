@@ -7,11 +7,11 @@
 </head>
 <body>
 	<h1>图片库</h1>
-	<ul>
-		<li><a href="../../assets/default/img/001.jpg" onclick="showPic(this);return false;" title="风景1">图1</a></li>
-		<li><a href="../../assets/default/img/002.jpg" onclick="showPic(this);return false;" title="型男1">图2</a></li>
-		<li><a href="../../assets/default/img/003.jpg" onclick="showPic(this);return false;" title="GD">图3</a></li>
-		<li><a href="../../assets/default/img/004.jpg" onclick="showPic(this);return false;" title="bigbang">图4</a></li>
+	<ul id="image-gallery">
+		<li><a href="../../assets/default/img/001.jpg" title="风景1">图1</a></li>
+		<li><a href="../../assets/default/img/002.jpg" title="型男1">图2</a></li>
+		<li><a href="../../assets/default/img/003.jpg" title="GD">图3</a></li>
+		<li><a href="../../assets/default/img/004.jpg" title="bigbang">图4</a></li>
 	</ul>
 	<img src="../../assets/default/img/000.jpg" id="placeholder" title="placeholder">
 	<p id="description">请选中一张图片！</p>
@@ -19,5 +19,8 @@
 
 
 <script type="text/javascript" src="../../assets/default/js/showPic.js"></script>
+<script type="text/javascript">
+	addLoadEvent(prepareGallery);
+</script>
 </body>
 </html>
